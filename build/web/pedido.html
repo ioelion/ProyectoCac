@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="es">
+    <meta charset="utf-8">
+    <title>Pedido</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    
+    <img class="m-auto d-block mt-5 " src="./images/logo_login.png" alt="logo buenos aires" style="width:20%">
+    <h2 class = "text-center fw-bold mt-5 mb-3"> Formulario de Pedido</h2>
+    <h6 class = "text-center text-muted mb-5"> La fecha de entrega será coordinada telefónicamente.</h6>
+
+    <h3 class = "text-center mb-4">Tu pedido</h3>
+    <form class = "text-center me-5 ms-5">
+        <!-- Nombre input -->
+        <div class="row mb-4">
+        <div class="col">
+            <div class="form-outline">
+            <input type="text" id="nombreInput" class="form-control" placeholder="Tu nombre"/>
+            <label class="form-label" for="nombreInput" >Nombre</label>
+            </div>
+        </div>
+        <!-- Apellido input -->
+        <div class="col">
+            <div class="form-outline">
+            <input type="text" id="apellidoInput" class="form-control" placeholder="Tu apellido"/>
+            <label class="form-label " for="apellidoInput" >Apellido</label>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Usuario input -->
+        <div class="form-outline mb-4">
+        <input type="text" id="usuarioInput" class="form-control" placeholder="Usuario"/>
+        <label class="form-label" for="usuarioInput" >Nombre de Usuario</label>
+        </div>
+    
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+        <input type="text" id="emailInput" class="form-control" placeholder="tuemail@prueba.com"/>
+        <label class="form-label" for="emailInput" >Email</label>
+        </div>
+    
+        <!-- Lugar Entrega input -->
+        <div class="form-outline mb-4">
+        <input type="email" id="lugarEntregaInput" class="form-control" placeholder="Calle y altura"/>
+        <label class="form-label" for="lugarEntregaInput" >Lugar de Entrega</label>
+        </div>
+    
+
+        <div class="row mb-4">
+            <!-- Nombre input -->
+            <div class="col">
+                <div class="form-outline">
+                    <select class="form-select" id="localidadInput" aria-label="localidadList">
+                        <option selected>Selecciona</option>
+                        <option value="1">Lanus</option>
+                        <option value="2">Lomas de Zamora</option>
+                        <option value="3">Remedios de Escalada</option>
+                      </select>
+                </div>
+            </div>
+            <!-- Provincia input -->
+            <div class="col">
+                <div class="form-outline">
+                    <select class="form-select" id="provinciaInput" aria-label="provinciaList">
+                        <option selected>Selecciona</option>
+                        <option value="1">Buenos Aires</option>
+                        <option value="2">Cordoba</option>
+                        <option value="3">Salta</option>
+                      </select>
+                </div>
+            </div>
+            <!-- Codigo Postal input -->
+            <div class="col">
+                <div class="form-outline">
+                <input type="text" id="codigoPostalInput" class="form-control" placeholder="...."/>
+                <label class="form-label " for="codigoPostalInput" >Codigo Postal</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forma de Pago input -->
+        <div class="mb-5 m-auto col-sm-2 text-start">
+            <h4 class = "text-center mb-3 fw-bold">Forma de Pago</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formaPago" id="tarjetaOpcionId">
+                <label class="form-check-label" for="tarjetaOpcionId">
+                Tarjeta
+                </label>
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="formaPago" id="mercadoPagoOpcionId" checked>
+                <label class="form-check-label" for="mercadoPagoOpcionId">
+                MercadoPago
+                </label>
+            </div>
+        </div>
+
+        <!-- Titular de Tarjeta input -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                <input type="text" id="titularInput" class="form-control"/>
+                <label class="form-label" for="titularInput" >Nombre del Titular de la Tarjeta</label>
+                </div>
+            </div>
+             <!-- Numero de la Tarjeta input -->
+            <div class="col">
+                <div class="form-outline">
+                <input type="text" id="numeroInput" class="form-control"/>
+                <label class="form-label " for="numeroInput" >Número de la Tarjeta</label>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Fecha Vto input -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                <input type="text" id="fechaVencimientoInput" class="form-control"/>
+                <label class="form-label" for="fechaVencimientoInput" >Fecha de Vencimiento</label>
+                </div>
+            </div>
+            <!-- Codigo input -->
+            <div class="col">
+                <div class="form-outline">
+                <input type="text" id="codigoInput" class="form-control"/>
+                <label class="form-label " for="codigoInput" >Código</label>
+                </div>
+            </div>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Confirmar pedido</button>
+
+        <p class="mt-4 mb-3 text-muted">&copy; 2017-2022</p>
+    </form>
+
+</body>
+</html>
